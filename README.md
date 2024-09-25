@@ -1,10 +1,10 @@
 # Simple Login Screen
-It is a project to understand the basics and working of swing.
+It is a program to understand the basics and working of swing.
 
 
-**Packages** used :-
-    * awt
-    * swing
+**Packages** used
+* awt
+* swing
 
 
 ## Output
