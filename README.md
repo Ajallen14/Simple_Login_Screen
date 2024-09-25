@@ -1,4 +1,11 @@
 # Simple Login Screen
+It is a project to understand the basics and working of swing.
+
+
+**Packages** used :-
+    * awt
+    * swing
+
 
 ## Output
 #### **Valid Case**
