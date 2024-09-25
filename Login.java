@@ -43,6 +43,17 @@ public class Login extends JFrame implements ActionListener{
     }
 
     public static void main(String[] args) {
-        
+        new Login();
+    }
+
+    @Override
+    public void actionPerformed(ActiveEvent e){
+        String userName = userName_text.getText();
+        String password = password_text.getText();
+        if(userName.trim().equals("Jhon") && password.trim().equals("Jhon@123")){
+            msg.setText("WELCOME");
+        }else{
+            msg.setText("Invalid User\n Please try again");
+        }
     }
 }
