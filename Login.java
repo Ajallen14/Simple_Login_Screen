@@ -24,6 +24,25 @@ public class Login extends JFrame implements ActionListener{
 
         panel = new JPanel(new GridLayout(3, 1));
 
-                
+        panel.add(user_label);
+        panel.add(userName_text);
+        panel.add(password_label);
+        panel.add(password_text);
+
+        msg = new JLabel();
+        panel.add(msg);
+        panel.add(submit);
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        submit.addActionListener(this);
+        add(panel, BorderLayout.CENTER);
+        setTitle("Login ");
+        setSize(300, 100);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        
     }
 }
