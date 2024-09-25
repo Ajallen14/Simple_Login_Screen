@@ -1,5 +1,5 @@
 import java.awt.*;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 import javax.swing.*;
 
@@ -13,7 +13,7 @@ public class Login extends JFrame implements ActionListener{
 
     Login(){
         user_label = new JLabel();
-        user_label.setText("User NAme :");
+        user_label.setText("User Name :");
         userName_text = new JTextField();
 
         password_label = new JLabel();
@@ -38,7 +38,7 @@ public class Login extends JFrame implements ActionListener{
         submit.addActionListener(this);
         add(panel, BorderLayout.CENTER);
         setTitle("Login ");
-        setSize(300, 100);
+        setSize(500, 100);
         setVisible(true);
     }
 
@@ -47,13 +47,13 @@ public class Login extends JFrame implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActiveEvent e){
+    public void actionPerformed(ActionEvent e){
         String userName = userName_text.getText();
         String password = password_text.getText();
         if(userName.trim().equals("Jhon") && password.trim().equals("Jhon@123")){
             msg.setText("WELCOME");
         }else{
-            msg.setText("Invalid User\n Please try again");
+            msg.setText("Invalid User");
         }
     }
 }
