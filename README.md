@@ -3,8 +3,8 @@ It is a program to understand the basics and working of swing.
 
 
 **Packages** used
-* awt
-* swing
+* #### [awt](https://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html)
+* #### [swing](https://docs.oracle.com/javase/tutorial/uiswing/)
 
 
 ## Output
